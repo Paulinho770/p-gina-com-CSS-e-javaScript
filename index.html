@@ -20,7 +20,7 @@
             background-color: blueviolet; /* Definir a cor de fundo*/
             color: white ; /* definir a cor do botão*/
             border: none; /* Remover a borda  do botão*/
-            border - radius: 5px;/*adicionar cantos arredondados ao botão; 
+            border - radius: 5px;/*adicionar cantos arredondados ao botão*/
         }    
   </style>
 </head>
@@ -28,6 +28,15 @@
    <!--título principal da página -->
    <h1>Bem vindo ao meu site simples</h1>
    <!--criando um botão que mudará a cor de fundo da página-->
-   <button onclick="mudarcor()">mudar cor de fundo</button> 
+   <button onclick="mudarcor()">mudar cor de fundo</button> ]
+   <script>
+       // Função JavaScript para mudar a cor de fundo da página
+       function mudarCor(){
+              //Gerar um cor aleatória em formato hexadecimal
+              var corAleatoria = '#' + Math.floor(Math.random()*16777215).toString(16)
+              //Aplica nova cor ao fundo da página
+              document.body.style.background = corAleatoria;                                                                
+       }
+   </script>
 </body>
 </html>
